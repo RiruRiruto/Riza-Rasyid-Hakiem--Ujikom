@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
-public class PLayerController : MonoBehaviour
+public class UIManager : MonoBehaviour
 {
-    public float speed = 5f;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,7 +15,6 @@ public class PLayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float move = Input.GetAxis("Horizontal");
-        transform.Translate(move, 0, 0);
+        
     }
 }

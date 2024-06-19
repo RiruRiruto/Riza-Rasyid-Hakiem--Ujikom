@@ -4,16 +4,13 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class MainMenu : MonoBehaviour
+public class BackToMenu : MonoBehaviour
 {
-    public Button btnPlay;
-    public Button btnExit;
-
+    public Button btnMainMenu;
     // Start is called before the first frame update
     void Start()
     {
-        btnPlay.onClick.AddListener(playGame);
-        btnExit.onClick.AddListener(exitGame);
+        btnMainMenu.onClick.AddListener(MainMenu);
     }
 
     // Update is called once per frame
@@ -22,13 +19,8 @@ public class MainMenu : MonoBehaviour
         
     }
 
-    void playGame()
+    void MainMenu()
     {
-        SceneManager.LoadScene(1);
-    }
-
-    void exitGame()
-    {
-        Application.Quit();
+        SceneManager.LoadScene(0);
     }
 }
